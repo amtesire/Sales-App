@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load ratings %}
+{% load static %}
+{% block content %}
+
+<hr class="mt-5">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+
+      <img src="{{product.image.url}}" class=" mt-2 w-100" alt="">
+      <hr>
+      <h2 class="ml-3 mt-3" style="color: blue;">Product Price</h2>
+      <hr>
+      <h4 class="mt-3 ml-5">{{product.price}}</h4>
+
+    </div>
+    <div class="col-md-4">
+      <h2 class="ml-3" style="color: blue;">Product Name</h2>
+      <hr>
+      <h4 class="mt-3 ml-3"> {{product.item_name}}</h4>
+      <h2 class="ml-3 mt-3" style="color: blue;">Product Description</h2>
+      <hr>
+      <p class="mt-3 ml-5">{{product.description}}</p>
+    
+    </div>
+
+    <div class="col-md">
+      <h2 style="color: blue;">Ratings</h2>
+      {% ratings product %}
+      <hr>
+      <br>
+      <h6>If you want to buy ,please fill the form. </h6>
+      <form action="" method="POST" class="btn-block">
+        {% csrf_token %}
+        <input hidden type="text" name='product' value='{{product.id}}'>
+        Location:<input type="text" name="location" >
+        <br><br>
+        Phone Number:<input type="text" name="phone number">
+        <br>
+        
+        <input type="submit" class="float-right btn btn-success  form-control"
+          value="BUY" id="buy" onclick='alert("It will be delivered at your doorstep. Thank you for shooping with us!")'>
+
+      </form>
+      <div id="l">
+        
+
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

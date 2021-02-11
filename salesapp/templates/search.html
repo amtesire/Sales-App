@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+{% load bootstrap4 %}
+{%load static%}
+{% block content %}
+<br><br>
+<div class="container">
+
+  <div class="row">
+    {% if products %}
+    <h2>Found {{ products|length }} Products with this name</h2>
+    {% else %}
+    <h2>There are no Products with this name</h2>
+    {% endif %}
+
+  </div>
+
+    {% if products %}
+      {% for product in products %}
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="w-100" src="{{product.image.url}}" alt="products">
+              <br><br>
+              <h2 class="ml-3">Product Name</h2>
+              <hr>
+              <h4 class="mt-3 ml-3"> {{product.item_name}}</h4>
+              <h2 class="ml-3 mt-3">Product Description</h2>
+              <hr>
+              <h4 class="mt-3 ml-5">{{product.description}}</h4>
+              <hr>
+              <h2 class="ml-3 mt-3">Product Price</h2>
+              <hr>
+              <h4 class="mt-3 ml-5">{{product.price}}</h4>
+              <hr>
+              <h3 class="mt-5 ml-5 text-info">Posted On {{product.date_added}}</h3>
+
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      {% endif %}
+
+  </div>
+</div>
+{% endblock %}
