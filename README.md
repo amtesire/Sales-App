@@ -17,15 +17,15 @@ This is a sales app where a user must signup first, be able to see all available
 ## Screenshots 
 ###### Home page
  
-<img src="https://raw.githubusercontent.com/amtesire/Hood-Project/master/static/images/homepage3.png">
+<img src="https://raw.githubusercontent.com/amtesire/Sales-App/master/static/images/homepage3.png">
 
 ###### Available product page
 
-<img src="https://raw.githubusercontent.com/amtesire/Hood-Project/master/static/images/secondpage.png">
+<img src="https://raw.githubusercontent.com/amtesire/Sales-App/master/static/images/secondpage.png">
 
 ###### Product page
  
-<img src="https://raw.githubusercontent.com/amtesire/Hood-Project/master/static/images/productpage.png">
+<img src="https://raw.githubusercontent.com/amtesire/Sales-App/master/static/images/productpage.png">
 
 ## User Story  
   
