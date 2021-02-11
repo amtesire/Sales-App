@@ -14,18 +14,6 @@ This is a sales app where a user must signup first, be able to see all available
 ##  Live Link  
  Click [View Site]()  to visit the site
   
-## Screenshots 
-###### Home page
- 
-<img src="https://raw.githubusercontent.com/amtesire/Sales-App/master/static/images/homepage3.png">
-
-###### Available product page
-
-<img src="https://raw.githubusercontent.com/amtesire/Sales-App/master/static/images/secondpage.png">
-
-###### Product page
- 
-<img src="https://raw.githubusercontent.com/amtesire/Sales-App/master/static/images/productpage.png">
 
 ## User Story  
   
